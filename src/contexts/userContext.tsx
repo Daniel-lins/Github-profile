@@ -79,7 +79,7 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
   }, []);
   useEffect(() => {
     {
-      userData && setUserList([...userList, userData]);
+      userData && setUserList([userData, ...userList]);
     }
   }, [userData]);
 
@@ -99,6 +99,3 @@ export const UserContextProvider = ({ children }: UserContextProps) => {
     </UserContext.Provider>
   );
 };
-function Dispatch<T>() {
-  throw new Error("Function not implemented.");
-}

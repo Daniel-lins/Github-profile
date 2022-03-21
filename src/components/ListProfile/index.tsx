@@ -4,7 +4,7 @@ import { UserContext } from "../../contexts/userContext";
 import { CardProfile } from "../../components/CardProfile";
 
 export const ListProfile = () => {
-  const { user, setUser, getUser, userList } = useContext(UserContext);
+  const { user, userList } = useContext(UserContext);
 
   return (
     <List>

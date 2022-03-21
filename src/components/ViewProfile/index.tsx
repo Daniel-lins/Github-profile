@@ -69,7 +69,8 @@ export const ViewProfile = () => {
           <FaUserAlt /> {profile?.login}{" "}
         </p>
         <p>
-          <MdLocationOn /> {profile?.location}{" "}
+          {profile?.location && <MdLocationOn />}
+          {profile?.location}{" "}
         </p>
         <p> {profile?.bio}</p>
         <div className="FollowContainer">
@@ -79,7 +80,7 @@ export const ViewProfile = () => {
 
           <div>
             {" "}
-            <p>Seguindos</p>
+            <p>Seguindo</p>
             <h2> {profile?.following}</h2>{" "}
           </div>
           <div>
@@ -87,7 +88,7 @@ export const ViewProfile = () => {
           </div>
         </div>
       </CardProfile>
-
+      <h1>Repositórios</h1>
       <RepoList>
         {repoList.map((c) => (
           <ContainerList>
@@ -107,7 +108,7 @@ export const ViewProfile = () => {
                 </h3>{" "}
               </div>
               <p>
-                <MdComputer />
+                {c.language && <MdComputer />}
                 {c.language}{" "}
               </p>
               <p>
@@ -115,7 +116,7 @@ export const ViewProfile = () => {
                 {c.description}{" "}
               </p>
               <p>
-                <BsCalendar2DateFill /> {c.created_at}
+                {c.created_at && <BsCalendar2DateFill />} {c.created_at}
               </p>
               <p>
                 <GoRepoPush /> Last push: {c.pushed_at}

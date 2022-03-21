@@ -6,7 +6,6 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
   button {
     cursor: pointer;
     position: fixed;
@@ -15,6 +14,10 @@ export const Container = styled.div`
     margin: 5px;
     left: 0;
     top: 0;
+
+    @media (max-width: 688px) {
+      position: relative;
+    }
   }
 `;
 
@@ -22,11 +25,17 @@ export const CardProfile = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   width: 500px;
   background-color: #ffffff;
   border-radius: 10px;
   margin: 20px;
+
+  @media (max-width: 688px) {
+    max-width: 350px;
+    margin-left: 20px;
+  }
   img {
     width: 200px;
     border-radius: 50%;
@@ -47,37 +56,36 @@ export const CardProfile = styled.div`
 
 export const RepoList = styled.div`
   display: flex;
-  justify-content: center;
-  width: 100%;
+  width: 800px;
   height: 300px;
-  margin-left: 40px;
   border-radius: 10px;
   background-color: transparent;
   overflow: scroll;
   padding: 20px;
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+
+  @media (max-width: 688px) {
+    /* max-width: 350px;
+    margin-left: 20px; */
   }
-  scroll ::-webkit-scrollbar-button:start:decrement,
-  ::-webkit-scrollbar-button:end:increment {
+  ::-webkit-scrollbar {
+    overflow-y: hidden;
   }
 
   ::-webkit-scrollbar-track-piece {
     background-color: #1e262a;
-    -webkit-border-radius: 6px;
+
     cursor: pointer;
   }
 
+  ::-webkit-scrollbar-track-piece:vertical {
+    background-color: transparent;
+
+    cursor: pointer;
+  }
   ::-webkit-scrollbar-thumb:horizontal {
     background-color: #206071;
     -webkit-border-radius: 6px;
     cursor: pointer;
-  }
-
-  ::-webkit-scrollbar-thumb:vertical {
-    background-color: #206071;
-    display: none;
   }
 
   .DivRepo {
@@ -110,7 +118,4 @@ export const RepoList = styled.div`
   }
 `;
 
-export const ContainerList = styled.div`
-  width: 100%;
-  margin-left: 30px;
-`;
+export const ContainerList = styled.div``;

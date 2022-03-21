@@ -1,5 +1,8 @@
 import styled from "styled-components";
+
 export const List = styled.div`
+
+
   width: 600px;
   height: 300px;
   display: flex;
@@ -20,8 +23,8 @@ export const List = styled.div`
   }
   /* color: #fff; */
   ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 0px;
+	height: 0px;
 }
 
 ::-webkit-scrollbar-button:start:decrement,
