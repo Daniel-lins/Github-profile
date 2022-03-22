@@ -9,26 +9,7 @@ import { MdOutlineDescription } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
 import { BsCalendar2DateFill } from "react-icons/bs";
 import { GoRepoPush } from "react-icons/go";
-
-type ProfileType = {
-  login: string;
-  avatar_url: string;
-  name: string;
-  location: string;
-  id: string;
-  followers: string;
-  following: string;
-  bio: string;
-  public_repos: string;
-};
-
-type RepoListType = {
-  name: string;
-  language: string;
-  description: string;
-  created_at: string;
-  pushed_at: string;
-};
+import { RepoListType, ProfileType } from "./ViewType";
 
 export const ViewProfile = () => {
   const [profile, setProfile] = useState<ProfileType | null>(null);

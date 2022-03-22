@@ -1,36 +1,11 @@
 import { createContext, useState, useEffect } from "react";
 import { getUserData, getRepoData } from "../services/api";
-type UserDataType = {
-  login: string;
-  avatar_url: string;
-  name: string;
-  location: string;
-  id: string;
-  followers: string;
-  following: string;
-  public_repos: string;
-  bio: string;
-};
-
-type RepoListType = {
-  name: string;
-  language: string;
-  description: string;
-  created_at: string;
-  pushed_at: string;
-};
-
-type UserContextType = {
-  userData: UserDataType | null;
-  getUser: () => void;
-  user: string;
-  setUser: (newState: string) => void;
-  userList: UserDataType[];
-  repoList: RepoListType[];
-};
-type UserContextProps = {
-  children: JSX.Element;
-};
+import {
+  UserDataType,
+  RepoListType,
+  UserContextType,
+  UserContextProps,
+} from "./typeContext";
 
 const initialValue = {
   userData: null,

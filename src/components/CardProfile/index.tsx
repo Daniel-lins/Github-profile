@@ -6,25 +6,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 
-type RepoListType = {
-  name: string;
-  language: string;
-  description: string;
-  created_at: string;
-  pushed_at: string;
-};
-type PropsType = {
-  login: string;
-  avatar_url: string;
-  name: string;
-  location: string;
-  id: string;
-  followers: string;
-  following: string;
-  bio: string;
-  public_repos: string;
-  user: string;
-};
+import { RepoListType, PropsType } from "./CardProfileType";
 export const CardProfile = ({
   name,
   login,
@@ -41,7 +23,7 @@ export const CardProfile = ({
   let navigate = useNavigate();
 
   const HandleNavigate = () => {
-    navigate(`/ViewProfile/${login}`);
+    navigate(`/Profile/${login}`);
   };
   const getRepo = async () => {
     try {
