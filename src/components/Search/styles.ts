@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerInputs = styled.div`
+export const ContainerInputs = styled.article`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +19,7 @@ export const ContainerInputs = styled.div`
     margin-right: 20px;
     img {
       width: 80px;
+      margin-top: 90px;
     }
   }
   margin-top: 10px;
@@ -51,7 +52,7 @@ export const ContainerInputs = styled.div`
   }
 `;
 
-export const ContainerResult = styled.div`
+export const ContainerResult = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;

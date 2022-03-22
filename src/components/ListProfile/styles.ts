@@ -1,6 +1,23 @@
 import styled from "styled-components";
 
-export const List = styled.div`
+export const Container = styled.main`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Title = styled.div`
+  text-align: center;
+  padding: 10px;
+  color: #191b1b;
+  margin-right: 30px;
+  margin-bottom: -110px;
+`;
+
+export const List = styled.article`
 
 
   width: 600px;

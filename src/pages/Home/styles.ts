@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -17,7 +17,7 @@ export const Title = styled.div`
   margin-bottom: -110px;
 `;
 
-export const CardAplication = styled.div`
+export const CardAplication = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: flex;

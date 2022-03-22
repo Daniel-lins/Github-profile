@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.article`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 `;
 
-export const CardProfile = styled.div`
+export const CardProfile = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +54,7 @@ export const CardProfile = styled.div`
   }
 `;
 
-export const RepoList = styled.div`
+export const RepoList = styled.section`
   display: flex;
   width: 800px;
   height: 300px;
@@ -64,8 +64,7 @@ export const RepoList = styled.div`
   padding: 20px;
 
   @media (max-width: 688px) {
-    /* max-width: 350px;
-    margin-left: 20px; */
+    width: 350px;
   }
   ::-webkit-scrollbar {
     overflow-y: hidden;
