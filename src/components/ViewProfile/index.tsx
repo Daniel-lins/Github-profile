@@ -97,10 +97,11 @@ export const ViewProfile = () => {
                 {c.description}{" "}
               </p>
               <p>
-                {c.created_at && <BsCalendar2DateFill />} {c.created_at}
+                {c.created_at && <BsCalendar2DateFill />}{" "}
+                {c.created_at.split("T")}
               </p>
               <p>
-                <GoRepoPush /> Last push: {c.pushed_at}
+                <GoRepoPush /> Last push: {c.pushed_at.split("T")}
               </p>
             </div>{" "}
           </ContainerList>

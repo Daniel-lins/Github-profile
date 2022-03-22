@@ -1,4 +1,4 @@
-import { Container, Title } from "./styles";
+import { Container } from "./styles";
 
 import { Search } from "../../components/Search";
 import { ListProfile } from "../../components/ListProfile";
