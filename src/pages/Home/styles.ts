@@ -9,13 +9,6 @@ export const Container = styled.main`
   justify-content: center;
 `;
 
-export const Title = styled.div`
-  text-align: center;
-  padding: 10px;
-  color: #191b1b;
-  margin-right: 30px;
-  margin-bottom: -110px;
-`;
 
 export const CardAplication = styled.article`
   display: flex;
