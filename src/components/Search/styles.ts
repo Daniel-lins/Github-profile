@@ -19,7 +19,7 @@ export const ContainerInputs = styled.article`
     margin-right: 20px;
     img {
       width: 80px;
-      margin-top: 90px;
+      margin-top: 150px;
     }
   }
   margin-top: 10px;
